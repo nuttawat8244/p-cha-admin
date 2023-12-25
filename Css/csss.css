@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    background-color: #871e01;
+    /* color: red; */
+    height: 4rem;
+}
+ 
+.head h3{
+    margin-left: 2rem;
+    padding: 1rem 1rem;
+    color: aliceblue;
+}
+
+.department{
+    display: flex;  
+    justify-content: center;
+    /* border:#871e01 1px solid; */
+    
+}
+.department-2{
+    display: flex;
+    justify-content: center;
+    /* border:#871e01 1px solid; */
+    margin-top: -50px;
+}
+
+.department-2 .admin .btn-admin{
+    width: 10rem;
+    height: 5rem;
+    margin: 3rem;
+    /* border: solid 1px blue; */
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+
+}
+.department .admin .btn-admin{
+    width: 10rem;
+    height: 5rem;
+    margin: 3rem;
+    /* border: solid 1px blue; */
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+    
+
+}
+
+.btn-admin:hover{
+    background-color: rgb(255, 42, 0);
+    color: wheat !important;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+
+.department-flip{
+    display: flex;
+    align-items: center; /* จัดกึ่งกลางทางแนวแกน y */
+    justify-content: center; /* จัดกึ่งกลางทางแนวแกน x */
+    /* opacity: 0; */
+    transition: opacity 2s;
+
+}
+.flip-card-front{
+  display: flex;
+  align-items: center; /* จัดกึ่งกลางทางแนวแกน y */
+  justify-content: center; /* จัดกึ่งกลางทางแนวแกน x */
+  
+}
+
+.info{
+    color: white;
+    /* border: #871e01 1px solid; */
+}
+

@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    background-color: #871e01;
+    /* color: red; */
+    height: 4rem;
+}
+ 
+.head h3{
+    margin-left: 2rem;
+    padding: 1rem 1rem;
+    color: aliceblue;
+}
+
+.board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 1rem; */
+    
+}
+.board div{
+    /* margin: 1rem; */
+    text-align: center;
+    /* width: 30%; */
+}
+
+.board .dash{
+    margin: 1rem;
+    width: 150px;
+}
+
+.dash input{
+    text-align: center;
+    height: 3rem;
+}
+
+table{
+    text-align: center;
+    
+}
+
+table .detail{
+    text-align: left;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+
