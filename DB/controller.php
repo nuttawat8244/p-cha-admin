@@ -7,7 +7,17 @@ class Controller{
         $this->db = $pdo;
         
     }
-    
+
+        
+    function Delete($id){
+        try{
+            $sql = "DELETE FROM job WHERE ID IN($id)";
+            $result = $this->db->query($sql);
+            return $result;
+        }catch(PDOException $e){
+            $e->getMessage();
+        }
+    }
 
     function showdata($section){
         try{ 
