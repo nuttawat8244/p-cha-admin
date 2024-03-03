@@ -92,6 +92,16 @@ if (isset($_POST['Receive'])) {
     }
 }
 
+if (isset($_POST['Delete'])){
+    @$count = count($_POST['ids']);
+
+        @$all = implode(",", $_POST['ids']);
+         //echo $all;
+        $controller->Delete($all);
+        $_SESSION['true'] = "Delete Job Success";
+        require_once "swithalert.php";
+}
+
 
 // $section = "Business Analysis";
 $result = $controller->showdata_all();
@@ -187,9 +197,10 @@ $countjob_sub = $controller->countjob_sub_all();
         <form action="requriement_all.php" method="post" class="p-2">
             <!-- <div class="container  table"> -->
                 <table id="example" class="table table-striped table-bordered" width="100%">
-                    <div class="d-flex justify-content-end">
+                    <div class="d-flex gap-1 justify-content-end">
                         <!-- <button type="button" class="btn btn-primary btn-sm m-1" data-bs-toggle="modal" data-bs-target="#Main" data-bs-whatever="@mdo">Add Job</button> -->
                         <button type="submit" name="Receive" class="btn btn-primary btn-sm mb-2">Receive</button>
+                        <button type="submit" name="Delete" class="btn btn-danger btn-sm mb-2">Delete</button>
                     </div>
                     <thead class="table-primary">
                         <tr>
